@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=62.6", "versioneer[toml]==0.28"]
+requires = ["setuptools>=62.6", "versioneer[toml]>=0.28"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -19,14 +19,14 @@ classifiers = [
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
     "Topic :: Scientific/Engineering",
     "Topic :: System :: Distributed Computing",
 ]
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
-    "dask == 2024.9.1",
-    "pyarrow>=14.0.1",
+    "dask >= 2024.9.1",
     "pandas >= 2",
 ]
 
@@ -36,7 +36,7 @@ dynamic = ["version"]
 analyze = ["crick", "distributed", "graphviz"]
 
 [project.urls]
-"Source code" = "https://github.com/dask-contrib/dask-expr/"
+"Source code" = "https://github.com/K-Class/dask-expr/"
 
 [tool.setuptools.packages.find]
 exclude = ["*tests*"]
